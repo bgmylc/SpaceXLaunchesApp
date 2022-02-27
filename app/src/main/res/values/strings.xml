@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Space X Launch App</string>
+    <string name="launch_date"><b>Launch Date:</b> %s</string>
+    <string name="article_link"><b>Article Link:</b> %s</string>
+    <string name="video_link"><b>Video Link:</b> %s</string>
+
+</resources>
