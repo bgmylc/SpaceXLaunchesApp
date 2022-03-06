@@ -23,7 +23,7 @@ class HomeListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home_list, container, false)
-
+        binding.lifecycleOwner = this
 
         return binding.root
     }
@@ -31,11 +31,6 @@ class HomeListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        lifecycleScope.launchWhenResumed {
-            val response = apolloClient.query(LaunchesPastListQuery()).execute()
-
-            Log.d("LaunchList", "Success ${response.data}")
-        }
     }
 
 }
