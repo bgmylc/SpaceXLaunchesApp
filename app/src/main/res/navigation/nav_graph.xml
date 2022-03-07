@@ -18,5 +18,10 @@
         android:id="@+id/detailFragment"
         android:name="com.begumyolcu.spacexlaunchapp.ui.DetailFragment"
         android:label="DetailFragment"
-        tools:layout="@layout/fragment_detail"/>
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="launch_id"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
 </navigation>

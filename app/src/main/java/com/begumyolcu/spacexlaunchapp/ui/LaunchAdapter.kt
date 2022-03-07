@@ -2,6 +2,7 @@ package com.begumyolcu.spacexlaunchapp.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.begumyolcu.spacexlaunchapp.LaunchesPastListQuery
 import com.begumyolcu.spacexlaunchapp.R
@@ -45,7 +46,18 @@ class LaunchAdapter(private val launches: List<LaunchesPastListQuery.LaunchesPas
                 imageViewHomeCardShipPhoto.setImageResource(R.drawable.ic_error)
             }
 
+
+            cardViewHomeGridItem.setOnClickListener {
+                val id = launch.id
+                val homeToDetail = HomeListFragmentDirections.actionHomeToDetail(id)
+                Navigation.findNavController(it).navigate(homeToDetail)
+            }
+
         }
+
+
+//        al listToDetail = ProductListFragmentDirections.actionListToDetail(listingProduct)
+//        Navigation.findNavController(it).navigate(listToDetail)
     }
 
     override fun getItemCount() = launches.size
