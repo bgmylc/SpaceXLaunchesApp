@@ -33,12 +33,6 @@ class HomeListFragment : Fragment() {
             binding.adapter = adapter
         })
 
-        //TODO 1: Pagination eklenecek
-        //TODO 2: Detay sayfaya geçilecek
-        //TODO 3: Detay sayfa UI bağlantı
-        //TODO 4: Saygınlık
-
-
 
         return binding.root
     }
