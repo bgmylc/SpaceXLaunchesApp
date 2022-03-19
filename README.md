@@ -1,9 +1,7 @@
+
 # SpaceXLaunchesApp
 
-**TODO:**
+This basic app uses [SpaceX Launches API](https://api.spacex.land/graphql/) to show information about launches.
 
-- [ ] Pagination
+API works with GraphQL and the app uses Apollo library to fetch data.
 
-- [ ] Ships recyclerview
-
-- [ ] UI improvements
